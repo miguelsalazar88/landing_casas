@@ -60,6 +60,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           
+  # Se despliega la instancia Lambda
+      - name: Revision Flake8
+        run: zappa update dev
+          
   # Se suben las funciones al bucket
       - name: Upload to Bucket
         run: |
