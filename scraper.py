@@ -1,18 +1,19 @@
 import requests
 import datetime
 import boto3
-import os
 
 
 def get_url():
     return ('https://casas.mitula.com.co/'
-           'searchRE/nivel3-Chapinero/'
-           'nivel2-Bogot%C3%A1/'
-           'nivel1-Cundinamarca/'
-           'q-Bogot%C3%A1-Chapinero')
-    
+            'searchRE/nivel3-Chapinero/'
+            'nivel2-Bogot%C3%A1/'
+            'nivel1-Cundinamarca/'
+            'q-Bogot%C3%A1-Chapinero')
+
+
 def get_bucket():
     return 'landing-casas-salazar-bermudez'
+
 
 def lambda_handler():
 
