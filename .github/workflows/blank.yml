@@ -63,6 +63,6 @@ jobs:
   # Se suben las funciones al bucket
       - name: Upload to Bucket
         run: |
-          aws s3 cp funcion.py s3://bucket-ejercicio-tdd/
-          aws s3 cp test_funcion.py s3://bucket-ejercicio-tdd/
+          aws s3 cp scraper.py s3://funciones-parcial-big-data/
+          aws s3 cp test_scraper.py s3://funciones-parcial-big-data/
           
